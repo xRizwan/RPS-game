@@ -1,0 +1,74 @@
+body {
+    font-family: monospace;
+    color: white;
+    background: repeating-linear-gradient(to right,rgb(49, 48, 48),black,rgb(156, 155, 155));
+}
+#start {
+    display: flex;
+    justify-content: center;
+}
+.ngame {
+    width: 20rem;
+    height: 40px;
+    border-radius: 20px;
+    outline: transparent;
+    font-size: 20px;
+    color: white;
+    background: linear-gradient(to right, rgb(62, 119, 175),rgb(27, 62, 97));
+}
+.ngame:hover {
+    transform: scale(1.3);
+    animation-name: completerotate;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+}
+@keyframes completerotate {
+    20% {
+        transform: rotate(60deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    70% {
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#choices {
+    display: flex;
+    justify-content: center;
+}
+.choice {
+    margin: 1rem;
+    background: black;
+    color:white;
+    outline: transparent;
+    border-radius: 25px;
+    padding: 1rem;
+}
+.choice:hover {
+    transform: scale(1.3);
+}
+.middle {
+    text-align: center;
+    font-size: 18px;
+    line-height: 2rem;
+}
+.score {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.score:hover{
+    font-size:50px;
+}
+.distance {
+    padding: 10px;
+}
+.result {
+    text-align: center;
+    font-size: 17px;
+}
